@@ -1,0 +1,26 @@
+<html>
+    <head>
+    <title> 业务线</title>
+    </head>
+    <body>
+    <br>
+    <table border="1">
+        <tr>
+            <th>序号</th>
+            <th>model</th>
+            <th>ip_addr</th>
+            <th>os_info</th>
+        </tr>
+
+            {% for i in BusinessUnit %}
+                <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ i.0 }}</td>
+                <td>{{ i.1 }}</td>
+                <td>{{ i.2 }}</td>
+                </tr>
+            {% endfor %}
+
+    </table>
+    </body>
+</html>

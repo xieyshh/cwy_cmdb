@@ -1,0 +1,28 @@
+<html>
+    <body>
+    <form action="/assets/show/" method="post">
+        {% csrf_token %}
+        <input type="text" value="a_hostname" />
+        <input type="text" value="a_ip_addr" />
+        <input type="submit" value="增加" />
+    </form>
+      <div>
+        <table border="1">
+            <thead>
+            <tr>
+                <th>hostname</th>
+                <th>ip_addr</th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for line in server_list %}
+                    <tr>
+                        <td>{{ line.hostname }}</td>
+                        <td>{{ line.ip_addr }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>>
+      </div>
+    </body>
+</html>

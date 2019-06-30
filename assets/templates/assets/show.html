@@ -1,10 +1,10 @@
 <html>
     <body>
-    <form action="/assets/show/" method="post">
-        {% csrf_token %}
-        <input type="text" value="a_hostname" />
-        <input type="text" value="a_ip_addr" />
-        <input type="submit" value="增加" />
+    <form action="show/" method="post">
+{#        {% csrf_token %}#}
+        <p><input type="text" value="a_hostname" /></p>
+        <p><input type="text" value="a_ip_addr" /></p>
+        <p><input type="submit" value="增加" /></p>
     </form>
       <div>
         <table border="1">

@@ -1,3 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
 
 venv
+.idea/workspace.xml
+assets/__pycache__/
+assets/migrations/0003_auto_20190629_1916.py
+assets/migrations/__pycache__/
+cwy_cmdb/__pycache__/
+cwy_cmdb/static/

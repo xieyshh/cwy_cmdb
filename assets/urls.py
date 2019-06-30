@@ -6,4 +6,6 @@ from assets import views
 urlpatterns = [
     path('server/', views.server, name='server'),
     path('show/', views.show),
+    path('db_handle/', views.db_handle),
+    path('', views.show),
 ]

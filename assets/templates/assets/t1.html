@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+ <html>
+ <head lang="en">
+     <meta charset="UTF-8">
+     <title>Django操作数据库</title>
+     <link type="text/css" href="/static/base.css" rel="stylesheet" />
+ </head>
+ <body>
+     <table border="1">
+         <tr>
+             <th>用户名</th>
+             <th>密码</th>
+         </tr>
+         {% for item in li %}
+         <tr>
+             <td>{{ item.hostname }}</td>
+             <td>{{ item.ip_addr }}</td>
+         </tr>
+         {% endfor %}
+     </table>
+    <form action="../db_handle/" method="post">
+        <p><input name="hostname" /></p>
+        <p><input name="ip_addr" /></p>
+        <p><input type="submit" value="submit" /></p>
+    </form>
+ </body>
+ </html>
